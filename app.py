@@ -31,6 +31,7 @@ def load_csv():
         csv.drop('TARGET', axis=1, inplace=True)
         return csv
 
+
 # def load_model():
 #     model = pickle.load(open("model_lgbm.pkl", 'rb'))
 #     return model
