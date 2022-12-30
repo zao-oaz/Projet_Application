@@ -1,0 +1,26 @@
+2022-12-29 10:30:29,026 INFO    Thread-18 :57132 [wandb_setup.py:_flush():68] Configure stats pid to 57132
+2022-12-29 10:30:29,026 INFO    Thread-18 :57132 [wandb_setup.py:_flush():68] Loading settings from C:\Users\zaome\.config\wandb\settings
+2022-12-29 10:30:29,026 INFO    Thread-18 :57132 [wandb_setup.py:_flush():68] Loading settings from C:\Users\zaome\Documents\Projet_Fil_Rouge\Application\wandb\settings
+2022-12-29 10:30:29,027 INFO    Thread-18 :57132 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-29 10:30:29,027 INFO    Thread-18 :57132 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'app.py', 'program': 'C:\\Users\\zaome\\Documents\\Projet_Fil_Rouge\\Application\\app.py'}
+2022-12-29 10:30:29,028 INFO    Thread-18 :57132 [wandb_init.py:_log_setup():476] Logging user logs to C:\Users\zaome\Documents\Projet_Fil_Rouge\Application\wandb\run-20221229_103029-3n0c4fpz\logs\debug.log
+2022-12-29 10:30:29,029 INFO    Thread-18 :57132 [wandb_init.py:_log_setup():477] Logging internal logs to C:\Users\zaome\Documents\Projet_Fil_Rouge\Application\wandb\run-20221229_103029-3n0c4fpz\logs\debug-internal.log
+2022-12-29 10:30:29,031 INFO    Thread-18 :57132 [wandb_init.py:init():516] calling init triggers
+2022-12-29 10:30:29,031 INFO    Thread-18 :57132 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-12-29 10:30:29,033 INFO    Thread-18 :57132 [wandb_init.py:init():569] starting backend
+2022-12-29 10:30:29,033 INFO    Thread-18 :57132 [wandb_init.py:init():573] setting up manager
+2022-12-29 10:30:29,054 INFO    Thread-18 :57132 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2022-12-29 10:30:29,071 INFO    Thread-18 :57132 [wandb_init.py:init():580] backend started and connected
+2022-12-29 10:30:29,088 INFO    Thread-18 :57132 [wandb_init.py:init():658] updated telemetry
+2022-12-29 10:30:29,186 INFO    Thread-18 :57132 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-12-29 10:30:32,336 WARNING MsgRouterThr:57132 [router.py:message_loop():77] message_loop has been closed
+2022-12-29 10:30:34,240 ERROR   Thread-18 :57132 [wandb_init.py:init():1105] error
+Traceback (most recent call last):
+  File "C:\Users\zaome\.virtualenvs\Application-5xQfdT23\lib\site-packages\wandb\sdk\wandb_init.py", line 1078, in init
+    run = wi.init()
+  File "C:\Users\zaome\.virtualenvs\Application-5xQfdT23\lib\site-packages\wandb\sdk\wandb_init.py", line 697, in init
+    result = handle.wait(
+  File "C:\Users\zaome\.virtualenvs\Application-5xQfdT23\lib\site-packages\wandb\sdk\lib\mailbox.py", line 259, in wait
+    raise MailboxError("transport failed")
+wandb.errors.MailboxError: transport failed

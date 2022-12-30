@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Predict Loan Default Risk</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style-predict.css') }}">
+</head>
+<body>
+	<div class="box-area">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="/templates/home-page.html"><img src="/static/images/logo.png"></a>
+				  </div>
+				<nav>
+					<a href="#">Predict Loan Default Risk For Client</a> 
+				</nav>
+			</div>
+		</header>
+
+		<div class="banner-area"> </div>
+
+		<div class="content-area">
+			<div class="wrapper">
+				<h2> Le client, remboursera-t-il son prêt ? </h2> <br> 
+				<h3>Veuillez saisir un numéro d'identification de client<br> dont les caractéristiques de défaillance doivent être prédites.</h3>
+			</div>
+	
+	<div class = 'form-details'>
+		<form id = 'application' action = '/predict' method = 'POST'>
+			<img src="/static/images/prediction.png"><br>
+			<label for = 'SK_ID_CURR'>Entrez l'ID du client</label><br>
+			<input name = 'SK_ID_CURR' type = 'number' max = {{id_max}}  min = {{id_min}} step = 1 list="defaultNumbers" class = 'application-input' placeholder="SK_ID_CURR" >
+			<datalist id="defaultNumbers">
+				<option value="147804"></option>
+				<option value="255236"></option>
+				<option value="183886"></option>
+				<option value="430757"></option>
+				<option value="374822"></option>
+			  </datalist>
+			
+			<br>
+			<input type = 'submit' class = 'application-input submit' value = 'Predict'>
+			<!-- <p>
+				{{csv}}
+			</p> -->
+		</form>
+	</div>
+
+	<footer>			
+		<p>© 2023 | Designed by me</p>
+	</footer>
+	
+	</div>
+</body>
+</html>

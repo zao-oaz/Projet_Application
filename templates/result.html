@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Predicted Defaulting Risk</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style-result.css') }}">
+	</head>
+
+	<body>
+		<div class="box-area">
+			<header>
+				<div class="wrapper">
+					<div class="logo">
+						<a href="/templates/home-page.html"><img src="/static/images/logo.png"></a>
+					  </div>
+					<nav>
+						<a href="#">Predict Loan Default Risk For Client</a> 
+					</nav>
+				</div>
+			</header>
+	
+			<div class="banner-area"> </div>
+	
+			<div class="content-area">
+				<div class="wrapper">
+					<h2> Résultat de la prédiction</h2> <br> 
+					<h3>Regardons si le client SK_ID_CURR = {{submission}} sera un bon ou clien, ou non, auprès de la banque.</h3>
+				</div>
+				<br> 
+				<p>
+					{{test_score}}
+				</p>
+				<!-- <p>
+					{{id_client}}
+				</p>
+				<p>
+					{{test_score}}
+				</p> -->
+				
+	<div class = 'result'>
+		<h1>Sur la base de la prédiction du modèle, le client <b><u>{{text}}.</u></b> <br> 
+			<img src="{{img}}" height="310px"><br> 
+			Avec une probalité de <b><u>{{score}}</u></b>
+		</h1>
+		<br> 
+
+		<form id = 'go-back' method = 'post' action = '/home'>
+			<input type = 'submit' class = 'back submit' value = 'Faire une autre prédiction'>
+		</form>
+	</div>
+
+	<footer>			
+		<p>© 2023 | Designed by me</p>
+	</footer>
+
+</body>
+</html>

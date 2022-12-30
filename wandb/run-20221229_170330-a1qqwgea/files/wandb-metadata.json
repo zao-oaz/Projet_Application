@@ -1,0 +1,42 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.8",
+    "heartbeatAt": "2022-12-29T16:03:32.097833",
+    "startedAt": "2022-12-29T16:03:30.097833",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "script.py",
+    "codePath": "script.py",
+    "git": {
+        "remote": "https://github.com/zao-oaz/Projet_Fil_Rouge.git",
+        "commit": "974db4432fba7d46fe8dde5c16727540a2882282"
+    },
+    "email": "zaomerabet69@gmail.com",
+    "root": "C:/Users/zaome/Documents/Projet_Fil_Rouge/Application",
+    "host": "ZAO-COMPUTER",
+    "username": "zaome",
+    "executable": "C:\\Users\\zaome\\.virtualenvs\\Application-5xQfdT23\\Scripts\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2803.0,
+        "min": 0.0,
+        "max": 2803.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2803.0,
+            "min": 0.0,
+            "max": 2803.0
+        }
+    ],
+    "disk": {
+        "total": 476.14550399780273,
+        "used": 325.92663955688477
+    },
+    "memory": {
+        "total": 15.767570495605469
+    }
+}

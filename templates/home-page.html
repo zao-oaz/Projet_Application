@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home Credit Group Default Prediction</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style-home.css') }}">
+</head>
+<body>
+	<div class="box-area">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="/templates/home-page.html"><img src="/static/images/logo.png"></a>
+				  </div>
+				<nav>
+					<a href="#">Home Credit Default Risk</a> 
+				</nav>
+			</div>
+		</header>
+		
+		<div class="banner-area"> </div>
+
+		<div class="content-area">
+			<div class="wrapper">
+				<h2>Welcome to Home Credit Group</h2>
+				<p>
+					Il s’agit d’un problème massif pour de nombreuses banques et institutions financières, et c’est la raison pour 
+					laquelle ces institutions sont extrêmement sélectives dans le déploiement des prêts : une grande majorité des 
+					demandes de prêt sont rejetées. Cela est principalement dû aux antécédents de crédit insuffisants ou inexistants 
+					du demandeur, qui est par conséquent obligé de se tourner vers des prêteurs non fiables pour ses besoins financiers 
+					et risque d’être exploité, la plupart du temps avec des taux d’intérêt déraisonnablement élevés.
+				</p>
+				<!-- <p>
+					{{csv}}
+				</p> -->
+			</div>
+
+		<div class="button">
+			<h2>Pour vérifier le risque de défaut de paiement associé à un demandeur, <br>
+				<br>
+				Cliquez sur le bouton ci-dessous
+			</h2>
+			<img src="/static/images/click.png">
+			<form id = 'home-page' action = '/home' method = 'POST'>
+			<input type = 'submit' class = 'form-control submit' value = 'Check For Eligibility'>
+			</form>
+		</div>
+		
+		<footer>			
+			<p>© 2023 | Designed by me</p>
+		</footer>
+
+		</div>
+	</div>
+</body>
+</html>

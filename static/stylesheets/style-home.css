@@ -1,0 +1,173 @@
+/* body{
+	margin: 0;
+	padding: 0;
+	background-color: url(161-1619669_texture-texture-wallpaper-background-wallpaper-blue-imagen-para.jpg);
+	text-align: center;
+	background-size: cover;
+	background-color: white;
+	background-position: center;
+	font-family: sans-serif;
+}
+
+img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0.5px solid #ddd;
+	border-radius: 10px;
+	padding: 0.5px;
+	width: 1000px;
+}
+.home-title{
+	margin-top: 10px;
+	color: white;
+	transition: all 1s ease-in-out;
+	background-color: maroon;
+}
+.home-title h1{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 32px;
+}
+.home-title h2{
+	font-size: 16px;
+	margin-top: 10px;
+}
+form .submit{
+	background: black;
+	border-color: black;
+	border-radius: 10px;
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 1px;
+	height: 50px;
+	margin-bottom: 10px
+}
+form .submit:hover{
+	background-color: #fcae9a;
+	cursor: pointer;
+} */
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	text-align: center;
+}
+.wrapper {
+	width: 1500px;
+	margin: 0 auto;
+}
+
+.wrapper p {
+	width: 890px;
+	margin: 0 auto;
+}
+
+header {
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+
+.logo img{
+	float: left;
+	margin-top: 8px;
+	width: 80px;
+}
+
+nav {
+	float: right;
+	line-height: 100px;
+}
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+
+.banner-area {
+	width: 100%;
+	height: 350px;
+	position: fixed;
+	top: 100px;
+	background-image: url(https://miro.medium.com/max/700/1*VvcUN997q6bYh5g8AnaThg.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner-area h2 {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #fff;
+}
+.content-area {
+	width: 100%;
+	position: relative;
+	top: 450px;
+	background: #ebebeb;
+	height: 650px;
+}
+.content-area h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.content-area p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
+}
+
+/* --- Bouton --- */
+.button h2{
+	font-size: 25px;
+}
+
+.button img{
+	width: 100px;
+}
+
+form .submit{
+	background: black;
+	border-color: black;
+	border-radius: 50px;
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 60px;
+	width: 500px;
+	margin-bottom: 30px
+}
+
+form .submit:hover{
+	background-color:red;
+	border-color: red;
+	cursor: pointer;
+}
+
+/* --- Footer --- */
+footer {
+	margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color:#262626;
+    color: #fff;
+}
+
