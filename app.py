@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent
 
 # load model
 def load_model():
-    with open(f"{BASE_DIR}/model_lg.pkl", "rb") as f:
+    with open(f"{BASE_DIR}/model_lgbm.pkl", "rb") as f:
         model = pickle.load(f)
         return model
         
