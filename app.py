@@ -20,13 +20,13 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent
 
 # load model
 def load_model():
-    with open(f"{BASE_DIR}/model_lgbm.pkl", "rb") as f:
+    with open(f"{BASE_DIR}/model_lg.pkl", "rb") as f:
         model = pickle.load(f)
         return model
         
 # load csv
 def load_csv():
-    with open(f"{BASE_DIR}/data/csv_moins_3_lignes.csv", "rb") as f:
+    with open(f"{BASE_DIR}/data/clean_csv.csv", "rb") as f:
         csv = pd.read_csv(f, index_col=[0])
         csv.drop('TARGET', axis=1, inplace=True)
         return csv
