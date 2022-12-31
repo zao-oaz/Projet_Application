@@ -6,7 +6,6 @@ import pandas as pd
 from flask import Flask
 from flask import request
 from pathlib import Path
-from sqlalchemy import create_engine
 
 
 # ---------- Connexion Flask ---------- #
@@ -20,7 +19,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent
 
 # load model
 def load_model():
-    with open(f"{BASE_DIR}/model_lg.pkl", "rb") as f:
+    with open(f"{BASE_DIR}/model_lgbm.pkl", "rb") as f:
         model = pickle.load(f)
         return model
         
@@ -31,15 +30,6 @@ def load_csv():
         csv.drop('TARGET', axis=1, inplace=True)
         return csv
 
-# def load_model():
-#     model = pickle.load(open("model_lgbm.pkl", 'rb'))
-#     return model
-
-
-# def load_csv():
-#     csv = pd.read_csv('data/clean_csv.csv', index_col=[0])
-#     csv.drop('TARGET', axis=1, inplace=True)
-#     return csv
 
 
 # ---------- TESTS ---------- #
@@ -100,24 +90,6 @@ def prediction():
             prediction_img = IMG_1
             y_pred = 0   
 
-    # ---------- Connexion ---------- #
-
-    # database connection
-    hostname = "127.0.0.1"
-    dbname = "data_project"
-    uname = "root"
-    pwd = "zaomysql69"
-
-    # create SQLAlchemy engine to connect to MySQL Database
-    engine = create_engine(
-        "mysql+pymysql://{user}:{pw}@{host}/{db}".format(
-            host=hostname, db=dbname, user=uname, pw=pwd))
-
-    # connect to the database
-    engine.connect()
-
-    # upload dataframe in SQL base
-    csv.to_sql('prediction', engine, if_exists='append')
 
 
     # ---------- results page ---------- #
