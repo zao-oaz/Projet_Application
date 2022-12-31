@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent
 
 # load model
 def load_model():
-    with open(f"{BASE_DIR}/model_lg2.pkl", "rb") as f:
+    with open(f"{BASE_DIR}/models/model_lg.pkl", "rb") as f:
         model = pickle.load(f)
         return model
         
@@ -49,8 +49,8 @@ csv = load_csv()
 
 # ---------- HTML ---------- #
 
-id_min = csv["SK_ID_CURR"].min()
-id_max = csv["SK_ID_CURR"].max()
+# id_min = csv["SK_ID_CURR"].min()
+# id_max = csv["SK_ID_CURR"].max()
 
 # ---------- Import images ---------- #
 
@@ -73,7 +73,7 @@ def home_page():
 
 @app.route('/home', methods=['POST', 'GET'])
 def inputs_page():
-    return flask.render_template('predict.html', id_min=id_min, id_max=id_max)
+    return flask.render_template('predict.html')
 
 # ---------- Result page ---------- #
 

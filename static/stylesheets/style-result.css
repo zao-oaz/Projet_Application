@@ -113,3 +113,7 @@ footer {
     background-color:#262626;
     color: #fff;
 }
+
+footer p {
+	font-size: 17px
+}

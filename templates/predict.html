@@ -30,17 +30,18 @@
 		<form id = 'application' action = '/predict' method = 'POST'>
 			<img src="/static/images/prediction.png"><br>
 			<label for = 'SK_ID_CURR'>Entrez l'ID du client</label><br>
-			<input name = 'SK_ID_CURR' type = 'number' max = {{id_max}}  min = {{id_min}} step = 1 list="defaultNumbers" class = 'application-input' placeholder="SK_ID_CURR" >
+			<input name = 'SK_ID_CURR' list="defaultNumbers" class = 'application-input' placeholder="SK_ID_CURR" >
 			<datalist id="defaultNumbers">
-				<option value="147804"></option>
-				<option value="255236"></option>
-				<option value="183886"></option>
-				<option value="430757"></option>
+				<option value="100018"></option>
+				<option value="167862"></option>
+				<option value="358003"></option>
+				<option value="214773"></option>
 				<option value="374822"></option>
+				<option value="147804"></option>
 			  </datalist>
 			
 			<br>
-			<input type = 'submit' class = 'application-input submit' value = 'Predict'>
+			<input type = 'submit' class = 'application-input submit' value = 'Prédire'>
 			<!-- <p>
 				{{csv}}
 			</p> -->
@@ -48,7 +49,7 @@
 	</div>
 
 	<footer>			
-		<p>© 2023 | Designed by me</p>
+		<p>Copyright © 2023 | Designed By ZAO 😎</p>
 	</footer>
 	
 	</div>
