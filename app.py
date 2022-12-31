@@ -6,7 +6,7 @@ import pandas as pd
 from flask import Flask
 from flask import request
 from pathlib import Path
-# from sqlalchemy import create_engine
+from sqlalchemy import create_engine
 
 
 # ---------- Connexion Flask ---------- #
@@ -102,22 +102,22 @@ def prediction():
 
     # ---------- Connexion ---------- #
 
-    # # database connection
-    # hostname = "127.0.0.1"
-    # dbname = "data_project"
-    # uname = "root"
-    # pwd = "zaomysql69"
+    # database connection
+    hostname = "127.0.0.1"
+    dbname = "data_project"
+    uname = "root"
+    pwd = "zaomysql69"
 
-    # # create SQLAlchemy engine to connect to MySQL Database
-    # engine = create_engine(
-    #     "mysql+pymysql://{user}:{pw}@{host}/{db}".format(
-    #         host=hostname, db=dbname, user=uname, pw=pwd))
+    # create SQLAlchemy engine to connect to MySQL Database
+    engine = create_engine(
+        "mysql+pymysql://{user}:{pw}@{host}/{db}".format(
+            host=hostname, db=dbname, user=uname, pw=pwd))
 
-    # # connect to the database
-    # engine.connect()
+    # connect to the database
+    engine.connect()
 
-    # # upload dataframe in SQL base
-    # csv.to_sql('prediction', engine, if_exists='append')
+    # upload dataframe in SQL base
+    csv.to_sql('prediction', engine, if_exists='append')
 
 
     # ---------- results page ---------- #
